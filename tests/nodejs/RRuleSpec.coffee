@@ -77,8 +77,6 @@ DateUtils =
     timeZone ?= @getTimeZone()
     moment.tz(date, timeZone)
 
-  createLocalMoment: (date, timeZone) -> @createMoment(Dates.toLocal(date), timeZone)
-
   format: (date, timeZone) ->
     timeZone ?= @getTimeZone()
     moment.tz(date, timeZone).format()
